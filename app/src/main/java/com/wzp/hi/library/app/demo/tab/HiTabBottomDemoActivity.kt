@@ -2,6 +2,7 @@ package com.wzp.hi.library.app.demo.tab
 
 import android.graphics.BitmapFactory
 import android.os.Bundle
+import android.os.Handler
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.wzp.hi.library.app.R
@@ -42,21 +43,21 @@ class HiTabBottomDemoActivity : AppCompatActivity() {
             "#ffd44949"
         )
 
-        val infoCategory = HiTabBottomInfo(
-            "分类",
-            "fonts/iconfont.ttf",
-            getString(R.string.if_category),
-            null,
-            "#ff656667",
-            "#ffd44949"
-        )
-//        val bitmap = BitmapFactory.decodeResource(resources, R.mipmap.fire, null)
-//
-//        val infoCategory = HiTabBottomInfo<String>(
+//        val infoCategory = HiTabBottomInfo(
 //            "分类",
-//            bitmap,
-//            bitmap
+//            "fonts/iconfont.ttf",
+//            getString(R.string.if_category),
+//            null,
+//            "#ff656667",
+//            "#ffd44949"
 //        )
+        val bitmap = BitmapFactory.decodeResource(resources, R.mipmap.fire, null)
+
+        val infoCategory = HiTabBottomInfo<String>(
+            "分类",
+            bitmap,
+            bitmap
+        )
         val infoChat = HiTabBottomInfo(
             "推荐",
             "fonts/iconfont.ttf",

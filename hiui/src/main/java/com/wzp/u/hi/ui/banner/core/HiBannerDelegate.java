@@ -23,7 +23,7 @@ public class HiBannerDelegate implements ViewPager.OnPageChangeListener, IHiBann
     private Context mContext;
     private HiBanner mHiBanner;
     private HiBannerAdapter mAdapter;
-    private HiIndicator mHiIndicator;
+    private HiIndicator<?> mHiIndicator;
     private boolean mAutoPlay;
     private boolean mLoop;
     private List<? extends HiBannerMo> mHiBannerMos;
